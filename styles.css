@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    width: 80%;
+    margin: 40px auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.notetext{
+    width: 80%;
+    height: 200px;
+    margin: 10px auto;
+}
+
+#textInput{
+    width: 100%;
+    height: 100%;
+}
+
+#nameCreate{
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#nameInput{
+    flex-grow: 2;
+}
+
+#saveButton{
+    flex-grow: 1;
+    background-color: #0080ffd4;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.previousNotesContainer{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.previousNotes{
+    flex-grow: 2;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.buttons > button{
+    height: 30px;
+    background-color: #0080ffd4;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
