@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="script.js" defer></script>
+        <title>Note Writer</title>
+    </head>
+    <main>
+        <h1>Note Writing</h1>
+        <textarea id="textInput" tabindex="0"></textarea>
+
+        <div id="nameCreate">
+            <input id="nameInput" type="name">
+            <button id="saveButton">Save</button>
+        </div>
+
+        <h2>Previous Notes</h2>
+
+        <table id="previousWork">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody id="notes">
+                <!-- Notes will be inserted here -->
+                <!-- example <input type="radio" name="noteOption" class="noteList" value="value idk"> -->
+            </tbody>
+        </table>
+
+        <button id="loadButton">Load</button>
+        <button id="deleteButton">Delete</button>
+    </main>
+</html>
