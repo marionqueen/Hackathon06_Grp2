@@ -1,78 +1,119 @@
-*{
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.container{
+/* Container */
+.container {
     width: 80%;
     margin: 40px auto;
 }
 
-h1{
+/* Header */
+h1 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.notetext{
+/* Note Input Section */
+.notetext {
     width: 80%;
     height: 200px;
     margin: 10px auto;
 }
 
-#textInput{
+#textInput {
     width: 100%;
     height: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
 }
 
-#nameCreate{
+/* Note Name Input and Save Button */
+#nameCreate {
     width: 80%;
-    height: 30px;
-    margin: 0 auto;
+    margin: 10px auto;
     display: flex;
-    gap: 2%;
+    gap: 10px;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-#nameInput{
+#nameInput {
     flex-grow: 2;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-#saveButton{
+#saveButton {
     flex-grow: 1;
+    padding: 5px;
     background-color: #0080ffd4;
     color: white;
     border: none;
     font-weight: bold;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.previousNotesContainer{
+#saveButton:hover {
+    background-color: #006bb3;
+}
+
+/* Previous Notes Section */
+.previousNotesContainer {
     width: 80%;
     margin: 30px auto;
     display: flex;
-    gap: 2%;
+    gap: 10px;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.previousNotes{
+.previousNotes {
     flex-grow: 2;
 }
 
-.buttons{
+#previousWork {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#previousWork th, #previousWork td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#previousWork tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.buttons {
     display: flex;
     gap: 10px;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.buttons > button{
-    height: 30px;
+.buttons > button {
+    height: 40px;
     background-color: #0080ffd4;
     color: white;
     border: none;
     font-weight: bold;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons > button:hover {
+    background-color: #006bb3;
 }
